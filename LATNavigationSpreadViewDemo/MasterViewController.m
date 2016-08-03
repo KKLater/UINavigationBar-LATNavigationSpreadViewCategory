@@ -12,7 +12,7 @@
 
 @interface MasterViewController ()
 @property (strong, nonatomic) UIView *navigationSpreadView;
-
+@property (strong, nonatomic) UIButton *titleButton;
 @property NSMutableArray *objects;
 @end
 
@@ -31,10 +31,12 @@
 - (void)viewWillAppear:(BOOL)animated {
     self.clearsSelectionOnViewWillAppear = self.splitViewController.isCollapsed;
     [super viewWillAppear:animated];
-    self.navigationController.navigationBar.spreadView = self.navigationSpreadView;
+    self.titleButton.frame = CGRectMake(0, 0, 60, 30);
+    self.navigationItem.titleView = self.titleButton;
     
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
-    [self.navigationController.navigationBar addGestureRecognizer:tap];
+    
+    
+    self.navigationController.navigationBar.spreadView = self.navigationSpreadView;
     self.navigationController.navigationBar.spreadView.frame = CGRectMake(0, -84, CGRectGetWidth(self.view.frame), 64);
 }
 - (void)tap {
@@ -43,6 +45,8 @@
     } else {
         [self.navigationController.navigationBar showSpreadView];
     }
+    self.titleButton.selected = !self.navigationController.navigationBar.isSpreadViewShow;
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -109,5 +113,15 @@
     }
     return _navigationSpreadView;
 }
-
+- (UIButton *)titleButton {
+    if (!_titleButton) {
+        _titleButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_titleButton setTitle:@"展开" forState:UIControlStateNormal];
+        [_titleButton setTitle:@"收起" forState:UIControlStateSelected];
+        [_titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateSelected];
+        [_titleButton addTarget:self action:@selector(tap) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _titleButton;
+}
 @end
