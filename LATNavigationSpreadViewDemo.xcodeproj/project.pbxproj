@@ -440,7 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LATNavigationSpreadViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aaaa.LATNavigationSpreadViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luoshuxin.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -451,7 +451,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LATNavigationSpreadViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aaaa.LATNavigationSpreadViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luoshuxin.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -521,6 +521,7 @@
 				542C1D0D1D51A2C50095360A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		542C1D0E1D51A2C50095360A /* Build configuration list for PBXNativeTarget "LATNavigationSpreadViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +530,7 @@
 				542C1D101D51A2C50095360A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		542C1D111D51A2C50095360A /* Build configuration list for PBXNativeTarget "LATNavigationSpreadViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +539,7 @@
 				542C1D131D51A2C50095360A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
