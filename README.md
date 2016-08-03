@@ -4,7 +4,7 @@
 
 #### 1、演示：
 
-![](/Users/Later/Desktop/LATGit/LATNavigationSpreadViewDemo/UINavigationBar+LATNavigationSpreadViewCategory.gif)
+![](UINavigationBar+LATNavigationSpreadViewCategory.gif)
 
 #### 2、使用：
 
