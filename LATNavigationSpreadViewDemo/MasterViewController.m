@@ -34,8 +34,6 @@
     self.titleButton.frame = CGRectMake(0, 0, 60, 30);
     self.navigationItem.titleView = self.titleButton;
     
-    
-    
     self.navigationController.navigationBar.spreadView = self.navigationSpreadView;
     self.navigationController.navigationBar.spreadView.frame = CGRectMake(0, -84, CGRectGetWidth(self.view.frame), 64);
 }
